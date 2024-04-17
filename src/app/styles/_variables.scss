@@ -1,0 +1,55 @@
+/* stylelint-disable scss/no-global-function-names */
+$darkTheme: (
+  background: #34342f,
+  secondBackground: #42413c,
+  textColor: #fbf5e5,
+  secondText: #97948a,
+  green: #8ec07c,
+  blue: #83a598,
+  gray: #cbc5b7,
+  brown: #bf8f6c,
+  orange: #e78a4e,
+  yellow: #d8a657,
+  purple: #a78ac5,
+  pink: #d3869b,
+  red: #e9806e,
+);
+$lightTheme: (
+  background: #fbf5e5,
+  secondBackground: #eee8d9,
+  textColor: #333,
+  secondText: #83817b,
+  green: #92cb7d,
+  blue: #afcfc3,
+  gray: #cbc5b7,
+  brown: #d8a078,
+  orange: #ff9957,
+  yellow: #f5b95a,
+  purple: #bc9bde,
+  pink: #e993ab,
+  red: #fb8773,
+);
+
+@mixin themeApply($themeMap) {
+  --backgroundColor: map-get($map: $themeMap, background);
+  --secondBackgroundColor: map-get($map: $themeMap, $key: secondBackground);
+  --textColor: map-get($map: $themeMap, $key: text);
+  --secondTextColor: map-get($map: $themeMap, $key: secondText);
+  --greenColor: map-get($map: $themeMap, $key: green);
+  --blueColor: map-get($map: $themeMap, $key: blue);
+  --grayColor: map-get($map: $themeMap, $key: gray);
+  --brownColor: map-get($map: $themeMap, $key: brown);
+  --orangeColor: map-get($map: $themeMap, $key: orange);
+  --yellowColor: map-get($map: $themeMap, $key: yellow);
+  --purpleColor: map-get($map: $themeMap, $key: purple);
+  --pinkColor: map-get($map: $themeMap, $key: pink);
+  --redColor: map-get($map: $themeMap, $key: red);
+}
+
+body.lightTheme {
+  @include themeApply($lightTheme);
+}
+
+body.darkTheme {
+  @include themeApply($darkTheme);
+}
