@@ -1,9 +1,10 @@
 'use client';
-import React from 'react';
+import React, { useState } from 'react';
 import { Provider } from 'react-redux';
 import { Roboto } from 'next/font/google';
 import cn from 'classnames';
 import { store } from '@/src/reduxjs';
+import { ThemeContext } from './ThemeContext';
 
 interface Props {
   children: React.ReactNode;
@@ -15,16 +16,22 @@ const roboto = Roboto({
 });
 
 const Providers = ({ children }: Props): React.ReactNode => {
-  const currentTheme = localStorage.getItem('theme');
-  const isThemeSet = currentTheme === 'dark' || currentTheme === 'light';
-  if (!isThemeSet) {
-    localStorage.setItem('theme', 'dark');
+  const [theme, setTheme] = useState<'dark' | 'light'>('dark');
+  if (process.browser) {
+    const localTheme = localStorage.getItem('theme');
+    const isThemeExist = (localTheme === 'dark' || localTheme === 'light') && localTheme !== theme;
+    if (isThemeExist) {
+      setTheme(localTheme);
+    } else {
+      localStorage.setItem('theme', theme);
+    }
   }
+
   return (
-    <body
-      className={cn(roboto.className, 'body', { [(currentTheme as string) + 'Theme']: isThemeSet })}
-    >
-      <Provider store={store}>{children}</Provider>
+    <body className={cn(roboto.className, 'body', theme)}>
+      <ThemeContext.Provider value={{ theme, handleChangeTheme: setTheme }}>
+        <Provider store={store}>{children}</Provider>
+      </ThemeContext.Provider>
     </body>
   );
 };

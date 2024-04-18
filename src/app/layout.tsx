@@ -1,6 +1,7 @@
 import React from 'react';
 import { Metadata } from 'next';
 import Providers from '../components/Providers';
+import './styles/_variables.scss';
 
 export const metadata: Metadata = {
   title: 'Notion Go',

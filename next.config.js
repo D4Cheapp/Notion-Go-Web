@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: false,
   sassOptions: {
-    prependData: `@import "src/app/styles/_variables.scss"; @import "src/app/styles/mixins.scss";`,
+    prependData: `@import "src/app/styles/mixins";`,
   },
   eslint: {
     dirs: ['src'],
