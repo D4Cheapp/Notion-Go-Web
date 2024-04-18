@@ -1,6 +1,9 @@
+'use client';
 import React from 'react';
 import cn from 'classnames';
 import Link from 'next/link';
+import ChangeThemeIcon from '@/src/ui/ChangeThemeIcon';
+import AppIcon from '@/src/ui/AppIcon';
 import s from './Header.module.scss';
 
 interface Props {
@@ -12,13 +15,16 @@ interface Props {
 
 const Header = ({ links }: Props) => {
   return (
-    <header>
-      <p className={cn(s.text)}>Header</p>
+    <header className={s.header}>
+      <Link href={'/'} className={cn(s.text)}>
+        <AppIcon />
+      </Link>
       {links.map((link, index) => (
-        <Link href={link.redirectUrl} key={index}>
+        <Link className={s.link} href={link.redirectUrl} key={index}>
           {link.text}
         </Link>
       ))}
+      <ChangeThemeIcon />
     </header>
   );
 };

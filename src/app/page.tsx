@@ -1,13 +1,8 @@
-import Link from 'next/link';
 import React from 'react';
+import Home from '../pages/Home';
 
-const Home = () => {
-  return (
-    <div>
-      <h1>Home</h1>
-      <Link href={'/brand'}>Brand book</Link>
-    </div>
-  );
+const HomePage = () => {
+  return <Home />;
 };
 
-export default Home;
+export default HomePage;
