@@ -28,7 +28,6 @@
   --purple: #bc9bde;
   --pink: #e993ab;
   --red: #fb8773;
-
 }
 
 .body {
@@ -36,4 +35,5 @@
   background-color: var(--background);
   color: var(--textColor);
   overflow-x: hidden;
+  transition: .2s;
 }

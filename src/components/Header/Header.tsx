@@ -17,7 +17,7 @@ const Header = ({ links }: Props) => {
   return (
     <header className={s.header}>
       <Link href={'/'} className={cn(s.text)}>
-        <AppIcon />
+        <AppIcon width={40} height={40} />
       </Link>
       {links.map((link, index) => (
         <Link className={s.link} href={link.redirectUrl} key={index}>

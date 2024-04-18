@@ -1,0 +1,38 @@
+.root {
+  width: 60%;
+  padding-block: 15vh;
+  padding-inline: 20%;
+}
+
+.appIcon {
+  display: grid;
+  width: 100%;
+  margin-bottom: 15vh;
+  place-items: center;
+}
+
+.appTitle {
+  margin-bottom: 5vh;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.appDescriptionContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.description {
+  width: 35%;
+  border-radius: 10px;
+  background-color: var(--secondBackground);
+  padding-block: 3%;
+  padding-inline: 5%;
+  transition: .2s;
+}
+
+.descriptionText {
+  color: var(--textColor);
+  font-size: 1.2em;
+  transition: .2s;
+}

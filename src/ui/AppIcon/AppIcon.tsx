@@ -1,15 +1,18 @@
 import React, { memo } from 'react';
 import Image from 'next/image';
-import { useTheme } from '@/src/hooks/useTheme';
 
-const AppIcon = memo(function AppIcon(): React.ReactNode {
-  const [theme] = useTheme();
+interface Props {
+  width: number;
+  height: number;
+}
+
+const AppIcon = memo(function AppIcon({ width, height}: Props): React.ReactNode {
   return (
     <Image
-      src={theme === 'light' ? '/icons/logos/lightIcon.svg' : '/icons/logos/darkIcon.svg'}
+      src={'/icons/logos/raw.svg'}
       alt="Notion Go"
-      width={50}
-      height={50}
+      width={width}
+      height={height}
     />
   );
 });

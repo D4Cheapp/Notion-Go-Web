@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Provider } from 'react-redux';
 import { Roboto } from 'next/font/google';
 import cn from 'classnames';
@@ -17,7 +17,8 @@ const roboto = Roboto({
 
 const Providers = ({ children }: Props): React.ReactNode => {
   const [theme, setTheme] = useState<'dark' | 'light'>('dark');
-  if (process.browser) {
+
+  useEffect(() => {
     const localTheme = localStorage.getItem('theme');
     const isThemeExist = (localTheme === 'dark' || localTheme === 'light') && localTheme !== theme;
     if (isThemeExist) {
@@ -25,7 +26,7 @@ const Providers = ({ children }: Props): React.ReactNode => {
     } else {
       localStorage.setItem('theme', theme);
     }
-  }
+  }, [theme]);
 
   return (
     <body className={cn(roboto.className, 'body', theme)}>

@@ -1,0 +1,72 @@
+.root {
+  position: relative;
+  width: 60%;
+  padding-block: 10vh;
+  padding-inline: 20%;
+}
+
+
+.logo {
+  display: flex;
+  width: 100%;
+  align-items: flex-end;
+  justify-content: center;
+  margin-top: 1em;
+  margin-bottom: 1.2em;
+  @include fontType(6em, _, 700);
+}
+
+.descriptionTitle {
+  @include fontType(2.5em, _, 700);
+}
+
+.descriptionText {
+  @include fontType(1.3em, _, 500);
+}
+
+.light {
+  background-color: #eee8d9;
+  color: #333;
+}
+
+.green {
+  background-color: var(--green);
+  color: #34342f;
+}
+
+.dark {
+  background-color: #42413c;
+  color: #fbf5e5;
+}
+
+.darkButton {
+  background-color: #42413c;
+}
+
+.lightButton {
+  background-color: #eee8d9;
+}
+
+.greenButton {
+  background-color: var(--green);
+}
+
+.hidden {
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.hideButton {
+  position: absolute;
+  right: 20%;
+  bottom: 12vh;
+}
+
+.themeSwitchContainer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 4vw;
+  transition: 0.2s;
+}
