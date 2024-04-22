@@ -12,12 +12,7 @@ interface Props {
 const ThemeSwitchButton = ({ handler, icon, style }: Props): React.ReactNode => {
   return (
     <button className={cn(s.button, style)} onClick={handler}>
-      <Image
-        src={`/icons/logos/${icon}.svg`}
-        width={50}
-        height={50}
-        alt={'logo'}
-      />
+      <Image src={`/icons/logos/${icon}.svg`} width={50} height={50} alt={'logo'} />
     </button>
   );
 };

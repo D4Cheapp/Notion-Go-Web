@@ -1,0 +1,46 @@
+.root {
+  padding-block: 15vh;
+  padding-inline: 20%;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.description {
+  width: 70%;
+}
+
+.descriptionTitle {
+  margin-top: 0;
+  margin-bottom: 1em;
+  @include fontType(2.5rem, _, 700);
+}
+
+.descriptionText {
+  @include fontType(1.2rem, _, 500);
+}
+
+.colors {
+  border-radius: 10px;
+  background-color: var(--secondBackground);
+  margin-block: 2vw;
+  padding-block: 10vh;
+  padding-inline: 5vw;
+}
+
+.colorCards {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 5vw;
+}
+
+.secondaryColors {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+}

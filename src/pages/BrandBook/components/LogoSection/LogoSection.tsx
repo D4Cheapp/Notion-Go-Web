@@ -54,7 +54,7 @@ const LogoSection = (): React.ReactNode => {
         />
       </div>
       <Image
-        className={cn(s.hideButton, { [s.hidden]: isHidden } )}
+        className={cn(s.hideButton, { [s.hidden]: isHidden })}
         onMouseEnter={() => setIsHidden(true)}
         onMouseLeave={() => setIsHidden(false)}
         src={theme === 'dark' ? '/icons/eye/lightEye.svg' : '/icons/eye/darkEye.svg'}

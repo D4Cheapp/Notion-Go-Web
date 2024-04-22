@@ -6,15 +6,8 @@ interface Props {
   height: number;
 }
 
-const AppIcon = memo(function AppIcon({ width, height}: Props): React.ReactNode {
-  return (
-    <Image
-      src={'/icons/logos/raw.svg'}
-      alt="Notion Go"
-      width={width}
-      height={height}
-    />
-  );
+const AppIcon = memo(function AppIcon({ width, height }: Props): React.ReactNode {
+  return <Image src={'/icons/logos/raw.svg'} alt="Notion Go" width={width} height={height} />;
 });
 
 export default AppIcon;

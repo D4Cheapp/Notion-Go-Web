@@ -13,8 +13,8 @@
 
 .appTitle {
   margin-bottom: 5vh;
-  font-size: 2.5em;
   text-align: center;
+  @include fontType(2.5rem);
 }
 
 .appDescriptionContainer {
@@ -28,11 +28,10 @@
   background-color: var(--secondBackground);
   padding-block: 3%;
   padding-inline: 5%;
-  transition: .2s;
+  transition: 0.2s;
 }
 
 .descriptionText {
-  color: var(--textColor);
-  font-size: 1.2em;
-  transition: .2s;
+  transition: 0.2s;
+  @include fontType(1.2rem, var(--textColor));
 }

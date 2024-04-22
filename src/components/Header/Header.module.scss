@@ -1,18 +1,18 @@
 .header {
   display: inline-flex;
   width: 60%;
-  height: 5em;
+  height: 5rem;
   align-items: center;
   justify-content: space-around;
   margin-top: 0;
   background-color: var(--secondBackground);
   padding-inline: 20%;
-  transition: .2s;
+  transition: 0.2s;
 }
 
 .link {
   text-decoration: none;
-  transition: .2s;
+  transition: 0.2s;
   @include fontType(1.2em, var(--textColor), 500);
   @include hover {
     color: var(--green);

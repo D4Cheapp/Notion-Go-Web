@@ -1,10 +1,9 @@
 .root {
   position: relative;
   width: 60%;
-  padding-block: 10vh;
+  padding-block: 15vh;
   padding-inline: 20%;
 }
-
 
 .logo {
   display: flex;
@@ -13,15 +12,16 @@
   justify-content: center;
   margin-top: 1em;
   margin-bottom: 1.2em;
-  @include fontType(6em, _, 700);
+  @include fontType(6rem, _, 700);
 }
 
 .descriptionTitle {
-  @include fontType(2.5em, _, 700);
+  margin: 0;
+  @include fontType(2.5rem, _, 700);
 }
 
 .descriptionText {
-  @include fontType(1.3em, _, 500);
+  @include fontType(1.2rem, _, 500);
 }
 
 .light {
@@ -59,7 +59,7 @@
 .hideButton {
   position: absolute;
   right: 20%;
-  bottom: 12vh;
+  bottom: 17vh;
 }
 
 .themeSwitchContainer {
