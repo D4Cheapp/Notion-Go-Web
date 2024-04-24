@@ -1,8 +1,9 @@
 import React from 'react';
 import Header from '@/src/components/Header';
 import About from './components/About';
-import LogoSection from './components/LogoSection';
+import Logo from './components/Logo';
 import Palette from './components/Palette';
+import ThemePreview from './components/ThemePreview';
 
 const BrandBook = () => {
   return (
@@ -17,8 +18,9 @@ const BrandBook = () => {
         ]}
       />
       <About />
-      <LogoSection />
+      <Logo />
       <Palette />
+      <ThemePreview />
     </>
   );
 };

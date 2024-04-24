@@ -58,8 +58,10 @@
 
 .hideButton {
   position: absolute;
-  right: 20%;
-  bottom: 17vh;
+  right: calc(20% + 15px);
+  bottom: 20vh;
+  cursor: pointer;
+  scale: 2;
 }
 
 .themeSwitchContainer {

@@ -24,9 +24,10 @@ const Providers = ({ children }: Props): React.ReactNode => {
     if (isThemeExist) {
       setTheme(localTheme);
     } else {
-      localStorage.setItem('theme', theme);
+      localStorage.setItem('theme', 'dark');
     }
-  }, [theme]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <body className={cn(roboto.className, 'body', theme)}>
