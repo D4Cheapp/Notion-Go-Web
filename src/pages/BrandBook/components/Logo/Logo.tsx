@@ -6,7 +6,7 @@ import ThemeSwitchButton from './ThemeSwitchButton';
 import s from './Logo.module.scss';
 
 const Logo = (): React.ReactNode => {
-  const [theme, setTheme] = useState<'light' | 'dark' | 'green'>('green');
+  const [theme, setTheme] = useState<'light' | 'dark' | 'green'>('dark');
   const [isHidden, setIsHidden] = useState<boolean>(false);
 
   return (
@@ -20,16 +20,10 @@ const Logo = (): React.ReactNode => {
           для заметок и организации работы, они мгновенно ассоциируют её с Notion
         </p>
       </div>
-      <h1 className={s.logo}>
+      <h1 className={s.logo} style={{ color: theme === 'green' ? '#333' : '#8ec07c' }}>
         <Image
           className={s.icon}
-          src={
-            theme === 'dark'
-              ? '/icons/logos/rawLight.svg'
-              : theme === 'light'
-                ? '/icons/logos/rawDark.svg'
-                : '/icons/logos/rawDark.svg'
-          }
+          src={theme === 'green' ? '/icons/logos/rawDark.svg' : '/icons/logos/raw.svg'}
           width={100}
           height={100}
           alt={'logo'}

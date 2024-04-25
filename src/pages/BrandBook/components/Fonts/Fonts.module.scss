@@ -1,0 +1,54 @@
+.root {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10vh;
+  padding-block: 15vh;
+  padding-inline: 20%;
+}
+
+.montserratContainer {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+
+  h1 {
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+  }
+}
+
+.robotoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  p {
+    font-family: Roboto, sans-serif;
+  }
+}
+
+.title {
+  width: 45%;
+  @include fontType(3.5rem, _, 600);
+}
+
+.descriptionContainer {
+  width: 40%;
+  padding-block: 2em;
+  padding-inline: 2em;
+  @include fontType(1.2rem, _, 500);
+}
+
+.fontName {
+  margin-top: 0;
+}
+
+.background {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+}

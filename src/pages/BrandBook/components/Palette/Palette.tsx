@@ -1,5 +1,6 @@
 'use client';
 import React from 'react';
+import Image from 'next/image';
 import { useTheme } from '@/src/hooks/useTheme';
 import ChangeThemeIcon from '@/src/ui/ChangeThemeIcon';
 import ColorCard from './components/ColorCard';
@@ -33,6 +34,17 @@ const Palette = (): React.ReactNode => {
 
   return (
     <section className={s.root} id="colors">
+      <Image
+        className={s.colorsBackground}
+        src={
+          theme === 'light'
+            ? './images/backgrounds/lightPaletteBackground.svg'
+            : './images/backgrounds/darkPaletteBackground.svg'
+        }
+        fill
+        style={{ objectFit: 'cover' }}
+        alt={'background'}
+      />
       <div className={s.header}>
         <aside className={s.description}>
           <h1 className={s.descriptionTitle}>Цветовая палитра</h1>

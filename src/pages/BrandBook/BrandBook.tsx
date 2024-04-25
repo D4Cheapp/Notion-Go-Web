@@ -4,6 +4,7 @@ import About from './components/About';
 import Logo from './components/Logo';
 import Palette from './components/Palette';
 import ThemePreview from './components/ThemePreview';
+import Fonts from './components/Fonts';
 
 const BrandBook = () => {
   return (
@@ -21,6 +22,7 @@ const BrandBook = () => {
       <Logo />
       <Palette />
       <ThemePreview />
+      <Fonts />
     </>
   );
 };

@@ -14,7 +14,14 @@ interface Props {
 
 const TodoSection = ({ colors }: Props): React.ReactNode => {
   return (
-    <div className={s.root} style={{ color: colors.textColor }}>
+    <div
+      className={s.root}
+      style={{
+        color: colors.textColor,
+        backgroundColor: colors.background,
+        borderColor: colors.secondBackground,
+      }}
+    >
       <div className={s.header} style={{ backgroundColor: colors.secondBackground }}>
         <svg xmlns="http://www.w3.org/2000/svg" width={30} height={30} className={s.icon}>
           <path

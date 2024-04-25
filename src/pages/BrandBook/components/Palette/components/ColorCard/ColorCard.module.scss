@@ -9,6 +9,7 @@
   padding: 1vw;
   border-radius: 5px;
   cursor: pointer;
+  transition: 0.2s;
 
   @include hover {
     opacity: 0.9;

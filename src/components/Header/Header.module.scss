@@ -11,6 +11,7 @@
 }
 
 .link {
+  font-family: Roboto, sans-serif;
   text-decoration: none;
   transition: 0.2s;
   @include fontType(1.2em, var(--textColor), 500);

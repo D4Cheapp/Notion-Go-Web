@@ -22,7 +22,7 @@
 
 .text {
   margin: 0;
-  @include fontType(1.2em, _, 500);
+  @include fontType(1.2em, _, 600);
 }
 
 .select {
@@ -32,7 +32,7 @@
   color: #333 !important;
   padding-block: 0.1em;
   padding-inline: 1em;
-  @include fontType(1.2em, _, 500);
+  @include fontType(1.2em, _, 600);
 }
 
 .optionsContainer {
