@@ -1,0 +1,14 @@
+.propertyContainer {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  gap: 10;
+}
+
+.propertyLogo {
+  box-sizing: border-box;
+  padding-left: 0.2em;
+  border-left: 2px solid var(--green);
+  margin-left: 4px;
+  scale: 1.3;
+}

@@ -1,0 +1,47 @@
+.root {
+  border-radius: 10px;
+  background-color: var(--secondBackground);
+  cursor: pointer;
+  margin-block: 5vh;
+  margin-inline: 10%;
+  padding-block: 1em;
+  padding-inline: 5%;
+  transition: 0.2s;
+
+  @include hover {
+    opacity: 0.9;
+  }
+}
+
+.taskLabel {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.title {
+  margin: 0;
+}
+
+.taskInteraction {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1em;
+}
+
+.icon {
+  border-radius: 5px;
+}
+
+.taskContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.propertiesContainer {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1em;
+  gap: 1em;
+}

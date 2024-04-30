@@ -1,0 +1,80 @@
+.root {
+  position: relative;
+  width: 60%;
+  background-position: center;
+  background-size: cover;
+  padding-block: 15vh;
+  padding-inline: 20%;
+
+  @include desktop {
+    width: 80%;
+    padding-inline: 10%;
+  }
+
+  @include bigTablet {
+    width: 90%;
+    padding-inline: 5%;
+  }
+}
+
+.appIcon {
+  display: grid;
+  width: 100%;
+  margin-bottom: 15vh;
+  place-items: center;
+}
+
+.appTitle {
+  margin-bottom: 5vh;
+  text-align: center;
+  @include fontType(2.5rem);
+
+  @include smartphone {
+    display: none;
+  }
+}
+
+.appDescriptionContainer {
+  display: flex;
+  justify-content: space-between;
+
+  @include bigTablet {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.secondTitle {
+  @include fontType(2.5rem);
+
+  @include bigTablet {
+    text-align: center;
+  }
+}
+
+.description {
+  width: 40%;
+  border-radius: 10px;
+  transition: 0.2s;
+
+  @include bigTablet {
+    width: 90%;
+  }
+}
+
+.background {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.descriptionText {
+  transition: 0.2s;
+  @include fontType(1.4rem, var(--textColor));
+
+  @include bigTablet {
+    text-align: center;
+  }
+}

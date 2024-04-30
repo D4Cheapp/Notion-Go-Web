@@ -1,0 +1,76 @@
+.root {
+  position: relative;
+  padding-block: 15vh;
+  padding-inline: 20%;
+
+  @include desktop {
+    width: 80%;
+    padding-inline: 10%;
+  }
+
+  @include bigTablet {
+    width: 90%;
+    padding-inline: 5%;
+  }
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.description {
+  width: 70%;
+
+  @include smartphone {
+    width: 100%;
+  }
+}
+
+.descriptionTitle {
+  margin-top: 0;
+  margin-bottom: 1em;
+  word-wrap: break-word;
+  @include fontType(2.5rem, _, 700);
+
+  @include smartphone {
+    width: 70%;
+  }
+}
+
+.descriptionText {
+  @include fontType(1.2rem, _, 500);
+}
+
+.colorsBackground {
+  position: absolute;
+  z-index: -1;
+}
+
+.colors {
+  border-radius: 10px;
+  background-color: var(--secondBackground);
+  margin-block: 2vw;
+  padding-block: 10vh;
+  padding-inline: 5vw;
+}
+
+.colorCards {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 5vw;
+
+  @include bigTablet {
+    flex-direction: column;
+    gap: 5vh;
+  }
+}
+
+.secondaryColors {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 1em 12%;
+}

@@ -1,0 +1,55 @@
+.additionalColor {
+  display: flex;
+  width: 22%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @include bigTablet {
+    width: 44%;
+  }
+}
+
+.additionalColorText {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  @include fontType(1.2rem, _, 500);
+
+  @include bigTablet {
+    @include fontType(1.5rem, _, 500);
+  }
+}
+
+.copyColorText {
+  position: absolute;
+  left: 50%;
+  margin: 0;
+  transform: translate(-50%, 0);
+  transition: 0.2s;
+  @include fontType(1.2rem, _, 500);
+}
+
+.buttonText {
+  margin: 0;
+  transition: 0.2s;
+  @include fontType(1.2rem, _, 500);
+}
+
+.additionalColorButton {
+  position: relative;
+  border: none;
+  border-radius: 5px;
+  color: #333;
+  cursor: pointer;
+  padding-block: 0.5rem;
+  padding-inline: 1rem;
+  transition: 0.2s;
+
+  @include hover {
+    opacity: 0.9;
+  }
+}
+
+.hide {
+  opacity: 0;
+}

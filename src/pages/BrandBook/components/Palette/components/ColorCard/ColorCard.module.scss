@@ -1,0 +1,52 @@
+.root {
+  position: relative;
+  display: flex;
+  width: 23%;
+  height: 12vw;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 1vw;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+
+  @include hover {
+    opacity: 0.9;
+  }
+
+  @include bigTablet {
+    width: 100%;
+    height: 20vw;
+  }
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  transition: 0.2s;
+}
+
+.text {
+  margin: 0;
+  transition: 0.2s;
+}
+
+.hover {
+  opacity: 0;
+}
+
+.copyButton {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: none;
+  border-radius: 5px;
+  background: none;
+  outline: none;
+  padding-block: 0.5rem;
+  padding-inline: 1rem;
+  transform: translate(-50%, -50%);
+  transition: 0.2s;
+  @include fontType(1.5rem, _, 500);
+}
