@@ -1,0 +1,70 @@
+.root {
+  position: relative;
+  display: flex;
+  width: 60%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 15vh;
+  padding-inline: 20%;
+}
+
+.iconContainer {
+  display: flex;
+  width: 45%;
+  flex-direction: column;
+}
+
+.descriptionContainer {
+  width: 45%;
+}
+
+.title {
+  margin: 0;
+  @include fontType(2.5rem);
+}
+
+.imageContainer {
+  position: relative;
+  display: grid;
+  width: 60%;
+  aspect-ratio: 1/1;
+  margin-block: 2em;
+  padding-inline: 20%;
+  place-content: center;
+}
+
+.description {
+  margin-top: 2em;
+  @include fontType(1.5rem);
+}
+
+.select {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  appearance: none;
+  background-color: var(--secondBackground);
+  outline: none;
+  padding-block: 0.5em;
+  padding-inline: 1em;
+  @include fontType(1.5rem, var(--textColor), 500);
+}
+
+.selectArrow {
+  position: absolute;
+  top: 50%;
+  right: 2em;
+  width: 1em;
+  height: 1em;
+  border: 3px var(--textColor) solid;
+  border-top: none;
+  border-left: none;
+  rotate: 45deg;
+  transform: translate(0, calc(-50% - 0.5em));
+}
+
+.selectContainer {
+  position: relative;
+  width: 100%;
+}

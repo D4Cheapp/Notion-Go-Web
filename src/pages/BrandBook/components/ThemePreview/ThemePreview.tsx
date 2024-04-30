@@ -3,11 +3,12 @@ import TodoSection from './TodoSection';
 import s from './ThemePreview.module.scss';
 
 const darkTheme = {
-  textColor: '#fbf5e5',
   background: '#34342f',
   secondBackground: '#42413c',
+  textColor: '#fbf5e5',
   secondText: '#97948a',
   green: '#8ec07c',
+  theme: 'dark' as 'light' | 'dark',
 };
 
 const lightTheme = {
@@ -16,6 +17,7 @@ const lightTheme = {
   textColor: '#333',
   secondText: '#83817b',
   green: '#92cb7d',
+  theme: 'light' as 'light' | 'dark',
 };
 
 const ThemePreview = (): React.ReactNode => {

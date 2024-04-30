@@ -38,8 +38,8 @@ const Palette = (): React.ReactNode => {
         className={s.colorsBackground}
         src={
           theme === 'light'
-            ? './images/backgrounds/lightPaletteBackground.svg'
-            : './images/backgrounds/darkPaletteBackground.svg'
+            ? './images/backgrounds/light/paletteBackground.svg'
+            : './images/backgrounds/dark/paletteBackground.svg'
         }
         fill
         style={{ objectFit: 'cover' }}

@@ -1,0 +1,10 @@
+.icon {
+  width: 4.2em;
+  cursor: pointer;
+  transition: 0.2s;
+
+  @include hover {
+    scale: 1.2;
+    transform: translate(5px, 0);
+  }
+}

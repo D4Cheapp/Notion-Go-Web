@@ -14,8 +14,8 @@ const About = (): React.ReactNode => {
         className={s.background}
         src={
           theme === 'light'
-            ? './images/backgrounds/lightAboutBackground.svg'
-            : './images/backgrounds/darkAboutBackground.svg'
+            ? './images/backgrounds/light/aboutBackground.svg'
+            : './images/backgrounds/dark/aboutBackground.svg'
         }
         fill
         style={{ objectFit: 'cover' }}

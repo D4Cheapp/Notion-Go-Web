@@ -14,11 +14,9 @@ interface Props {
   properties?: TaskPropertyType[];
   icon?: string | StaticImport;
   colors?: {
-    background: string;
     secondBackground: string;
     textColor: string;
-    secondText: string;
-    green: string;
+    theme: 'light' | 'dark';
   };
 }
 
@@ -40,7 +38,7 @@ const ListedTask = ({ icon, id, properties, title, checked, colors }: Props): Re
       {properties && (
         <div className={s.propertiesContainer}>
           {properties.map((property) => (
-            <TaskProperty themeColor={colors?.textColor} property={property} key={property.id} />
+            <TaskProperty theme={colors?.theme} property={property} key={property.id} />
           ))}
         </div>
       )}

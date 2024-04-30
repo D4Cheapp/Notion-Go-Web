@@ -1,0 +1,21 @@
+.root {
+  display: flex;
+  width: 4.2em ;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  cursor: pointer;
+  gap: 0.6em;
+  padding-block: 0.5em;
+  transition: 0.2s;
+
+  @include hover {
+    gap: 0.9em;
+  }
+}
+
+.dot {
+  width: 0.8em;
+  height: 0.8em;
+  border-radius: 50%;
+}

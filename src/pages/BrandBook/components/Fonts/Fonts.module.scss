@@ -2,6 +2,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 10vh;
   padding-block: 15vh;
   padding-inline: 20%;
@@ -14,6 +15,7 @@
   justify-content: space-between;
 
   h1 {
+    align-self: flex-start;
     font-family: Montserrat, sans-serif;
     font-weight: 600;
   }
@@ -23,6 +25,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  h1 {
+    align-self: flex-start;
+  }
 
   p {
     font-family: Roboto, sans-serif;
@@ -37,12 +43,12 @@
 .descriptionContainer {
   width: 40%;
   padding-block: 2em;
-  padding-inline: 2em;
-  @include fontType(1.2rem, _, 500);
+  @include fontType(1.4rem, _, 500);
 }
 
 .fontName {
   margin-top: 0;
+  @include fontType(2.5rem, _, 600);
 }
 
 .background {

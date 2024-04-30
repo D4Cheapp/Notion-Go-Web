@@ -1,0 +1,9 @@
+.header {
+  display: flex;
+  width: calc(100% - 6vw);
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0 0 10px 10px;
+  padding-block: 0.7em;
+  padding-inline: 3vw;
+}

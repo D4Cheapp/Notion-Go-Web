@@ -3,22 +3,3 @@
   padding-bottom: 5vh;
   padding-inline: 10%;
 }
-
-.header {
-  display: flex;
-  width: calc(100% - 6vw);
-  align-items: center;
-  justify-content: space-between;
-  border-radius: 0 0 10px 10px;
-  padding-block: 1vh;
-  padding-inline: 3vw;
-}
-
-.icon {
-  cursor: pointer;
-  transition: 0.2s;
-
-  @include hover {
-    opacity: 0.8;
-  }
-}

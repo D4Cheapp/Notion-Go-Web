@@ -15,8 +15,8 @@ const Fonts = ({}: Props): React.ReactNode => {
         className={s.background}
         src={
           theme === 'light'
-            ? './images/backgrounds/fontLightBackground.svg'
-            : './images/backgrounds/fontDarkBackground.svg'
+            ? './images/backgrounds/light/fontBackground.svg'
+            : './images/backgrounds/dark/fontBackground.svg'
         }
         fill
         style={{ objectFit: 'cover' }}
