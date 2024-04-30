@@ -1,3 +1,4 @@
+'use client';
 import React, { useState } from 'react';
 import cn from 'classnames';
 import s from './AdditionalColor.module.scss';
