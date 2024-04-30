@@ -2,6 +2,16 @@
   position: relative;
   padding-block: 15vh;
   padding-inline: 20%;
+
+  @include desktop {
+    width: 80%;
+    padding-inline: 10%;
+  }
+
+  @include bigTablet {
+    width: 90%;
+    padding-inline: 5%;
+  }
 }
 
 .header {
@@ -13,12 +23,21 @@
 
 .description {
   width: 70%;
+
+  @include smartphone {
+    width: 100%;
+  }
 }
 
 .descriptionTitle {
   margin-top: 0;
   margin-bottom: 1em;
+  word-wrap: break-word;
   @include fontType(2.5rem, _, 700);
+
+  @include smartphone {
+    width: 70%;
+  }
 }
 
 .descriptionText {
@@ -43,10 +62,15 @@
   width: 100%;
   justify-content: space-between;
   margin-bottom: 5vw;
+
+  @include bigTablet {
+    flex-direction: column;
+    gap: 5vh;
+  }
 }
 
 .secondaryColors {
   display: inline-flex;
   flex-wrap: wrap;
-  gap: 1em 4%;
+  gap: 1em 12%;
 }

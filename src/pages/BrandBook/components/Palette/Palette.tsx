@@ -8,25 +8,25 @@ import AdditionalColor from './components/AdditionalColor';
 import s from './Palette.module.scss';
 
 const darkAdditionalColors = [
-  { name: 'Cambridge blue', color: '#83A598' },
+  { name: 'Viridian', color: '#83A598' },
   { name: 'Bone', color: '#CBC5B7' },
   { name: 'Lion', color: '#BF8F6C' },
-  { name: 'Persian orange', color: '#E78A4E' },
-  { name: 'Earth yellow', color: '#D8A657' },
-  { name: 'African Violet', color: '#A78AC5' },
+  { name: 'Persian', color: '#E78A4E' },
+  { name: 'Earth', color: '#D8A657' },
+  { name: 'Lavender ', color: '#A78AC5' },
   { name: 'Puce', color: '#D3869B' },
   { name: 'Salmon', color: '#E9806E' },
 ];
 
 const lightAdditionalColors = [
-  { name: 'Ash blue', color: '#AFCFC3' },
+  { name: 'Honeydew', color: '#AFCFC3' },
   { name: 'Bone', color: '#CBC5b7' },
   { name: 'Buff', color: '#D8A078' },
-  { name: 'Atomic tangerine', color: '#FF9957' },
-  { name: 'Hunyadi yellow', color: '#F5B95A' },
+  { name: 'Tangerine', color: '#FF9957' },
+  { name: 'Hunyadi', color: '#F5B95A' },
   { name: 'Wisteria', color: '#BC9BDE' },
-  { name: 'Amaranth pink', color: '#E993AB' },
-  { name: 'Burnt sienna', color: '#FB8773' },
+  { name: 'Amaranth', color: '#E993AB' },
+  { name: 'Sienna', color: '#FB8773' },
 ];
 
 const Palette = (): React.ReactNode => {

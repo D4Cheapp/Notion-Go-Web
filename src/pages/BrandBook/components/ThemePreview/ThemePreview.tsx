@@ -24,11 +24,9 @@ const ThemePreview = (): React.ReactNode => {
   return (
     <section className={s.root}>
       <div className={s.theme}>
-        <h1 className={s.themeTitle}>Темная тема</h1>
         <TodoSection colors={darkTheme} />
       </div>
       <div className={s.theme}>
-        <h1 className={s.themeTitle}>Светлая тема</h1>
         <TodoSection colors={lightTheme} />
       </div>
     </section>

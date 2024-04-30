@@ -19,11 +19,13 @@ const Header = ({ links }: Props) => {
       <Link href={'/'} className={cn(s.text)}>
         <AppIcon width={40} height={40} />
       </Link>
-      {links.map((link, index) => (
-        <Link className={s.link} href={link.redirectUrl} key={index}>
-          {link.text}
-        </Link>
-      ))}
+      <div className={s.linkContainer}>
+        {links.map((link, index) => (
+          <Link className={s.link} href={link.redirectUrl} key={index}>
+            {link.text}
+          </Link>
+        ))}
+      </div>
       <ChangeThemeIcon />
     </header>
   );

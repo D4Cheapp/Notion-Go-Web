@@ -1,13 +1,23 @@
 .additionalColor {
   display: flex;
   width: 22%;
+  height: 100%;
   flex-direction: column;
+  justify-content: space-between;
+
+  @include bigTablet {
+    width: 44%;
+  }
 }
 
 .additionalColorText {
   margin-top: 0;
   margin-bottom: 0.5em;
   @include fontType(1.2rem, _, 500);
+
+  @include bigTablet {
+    @include fontType(1.5rem, _, 500);
+  }
 }
 
 .copyColorText {

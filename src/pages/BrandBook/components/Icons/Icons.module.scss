@@ -7,16 +7,36 @@
   justify-content: space-between;
   padding-block: 15vh;
   padding-inline: 20%;
+
+  @include desktop {
+    width: 80%;
+    padding-inline: 10%;
+  }
+
+  @include bigTablet {
+    width: 90%;
+    flex-direction: column-reverse;
+    gap: 15vh;
+    padding-inline: 5%;
+  }
 }
 
 .iconContainer {
   display: flex;
   width: 45%;
   flex-direction: column;
+
+  @include bigTablet {
+    width: 90%;
+  }
 }
 
 .descriptionContainer {
   width: 45%;
+
+  @include bigTablet {
+    width: 90%;
+  }
 }
 
 .title {
@@ -32,6 +52,11 @@
   margin-block: 2em;
   padding-inline: 20%;
   place-content: center;
+
+  @include bigTablet {
+    width: 40%;
+    padding-inline: 30%;
+  }
 }
 
 .description {

@@ -11,3 +11,33 @@
   font-size: $fontSize;
   font-weight: $fontWeight;
 }
+
+@mixin mediumDesktop() {
+  @media only screen and (width <= 1280px) {
+    @content;
+  }
+}
+
+@mixin desktop() {
+  @media only screen and (width <= 1024px) {
+    @content;
+  }
+}
+
+@mixin bigTablet() {
+  @media only screen and (width <= 800px) {
+    @content;
+  }
+}
+
+@mixin smartphone() {
+  @media only screen and (width <= 550px) {
+    @content;
+  }
+}
+
+@mixin miniSmartphone() {
+  @media only screen and (width <= 320px) {
+    @content;
+  }
+}

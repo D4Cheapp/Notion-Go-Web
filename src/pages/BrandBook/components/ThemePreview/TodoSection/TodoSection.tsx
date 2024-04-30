@@ -24,6 +24,7 @@ const TodoSection = ({ colors }: Props): React.ReactNode => {
         borderColor: colors.secondBackground,
       }}
     >
+      <h1 className={s.themeTitle}>{colors.theme === 'light' ? 'Светлая' : 'Темная'} тема</h1>
       <TodoHeader colors={colors} />
       <ListedTask
         id={`1-${colors.secondBackground}`}

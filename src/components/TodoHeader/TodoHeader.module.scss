@@ -6,4 +6,13 @@
   border-radius: 0 0 10px 10px;
   padding-block: 0.7em;
   padding-inline: 3vw;
+
+  @include smartphone {
+    border-radius: 0;
+  }
+
+  @include miniSmartphone {
+    width: calc(100% - 10vw);
+    padding-inline: 5vw;
+  }
 }

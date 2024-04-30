@@ -1,6 +1,6 @@
 .root {
   display: flex;
-  width: 4.2em ;
+  width: 4em ;
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
@@ -15,7 +15,7 @@
 }
 
 .dot {
-  width: 0.8em;
-  height: 0.8em;
+  width: 0.7em;
+  height: 0.7em;
   border-radius: 50%;
 }

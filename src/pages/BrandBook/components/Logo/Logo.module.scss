@@ -3,25 +3,43 @@
   width: 60%;
   padding-block: 15vh;
   padding-inline: 20%;
+
+  @include desktop {
+    width: 80%;
+    padding-inline: 10%;
+  }
+
+  @include bigTablet {
+    width: 90%;
+    padding-bottom: 30vh;
+    padding-inline: 5%;
+  }
 }
 
 .logo {
-  display: flex;
-  width: 100%;
-  align-items: flex-end;
-  justify-content: center;
-  margin-top: 1em;
-  margin-bottom: 1.2em;
+  margin: 0;
   @include fontType(6rem, _, 700);
+
+  @include smartphone {
+    display: none;
+  }
 }
 
 .descriptionTitle {
   margin: 0;
   @include fontType(2.5rem);
+
+  @include smartphone {
+    text-align: center;
+  }
 }
 
 .descriptionText {
   @include fontType(1.2rem, _, 500);
+
+  @include smartphone {
+    display: none;
+  }
 }
 
 .light {
@@ -56,12 +74,33 @@
   transition: opacity 0.2s;
 }
 
+.logoContainer {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-block: 15vh;
+}
+
 .hideButton {
   position: absolute;
   right: calc(20% + 15px);
   bottom: 15vh;
   cursor: pointer;
   scale: 2;
+
+  @include desktop {
+    right: calc(10% + 15px);
+  }
+
+  @include bigTablet {
+    right: calc(5% + 15px);
+  }
+
+  @include smartphone {
+    right: calc(50% - 12px);
+  }
 }
 
 .themeSwitchContainer {

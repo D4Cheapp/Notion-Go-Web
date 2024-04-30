@@ -2,13 +2,16 @@
   display: flex;
   width: 100%;
   flex-direction: row;
+
+  @include bigTablet {
+    flex-direction: column;
+  }
 }
 
 .theme {
   width: 50%;
-}
 
-.themeTitle {
-  text-align: center;
-  @include fontType(2.5rem);
+  @include bigTablet {
+    width: 100%;
+  }
 }
