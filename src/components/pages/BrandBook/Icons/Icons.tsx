@@ -28,7 +28,7 @@ const Icons = (): React.ReactNode => {
             alt={currentIcon.name}
             src={`/icons/properties/${theme}/${currentIcon.location}.svg`}
             fill
-            objectFit="contain"
+            style={{ objectFit: 'contain' }}
           />
         </div>
         <div className={s.selectContainer}>

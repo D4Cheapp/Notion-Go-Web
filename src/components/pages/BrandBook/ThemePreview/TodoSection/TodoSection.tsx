@@ -1,6 +1,6 @@
 import React from 'react';
-import TodoHeader from '@/src/components/TodoHeader';
-import ListedTask from '../../../../../components/ListedTask';
+import TodoHeader from '@/src/components/common/TodoHeader';
+import ListedTask from '@/src/components/common/ListedTask';
 import s from './TodoSection.module.scss';
 
 interface Props {
