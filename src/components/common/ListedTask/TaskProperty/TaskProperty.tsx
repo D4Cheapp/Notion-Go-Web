@@ -221,12 +221,7 @@ const TaskProperty = ({ property, propertyName, theme }: Props): React.ReactNode
         return (
           <PropTemplate
             svg={
-              <Image
-                src={`/icons/properties/${theme}/url.svg`}
-                width={24}
-                height={24}
-                alt="url"
-              />
+              <Image src={`/icons/properties/${theme}/url.svg`} width={24} height={24} alt="url" />
             }
             key={property.id}
           >
@@ -328,14 +323,7 @@ const TaskProperty = ({ property, propertyName, theme }: Props): React.ReactNode
       const id = property.unique_id.number;
       return (
         <PropTemplate
-          svg={
-            <Image
-              src={`/icons/properties/${theme}/id.svg`}
-              width={24}
-              height={24}
-              alt="id"
-            />
-          }
+          svg={<Image src={`/icons/properties/${theme}/id.svg`} width={24} height={24} alt="id" />}
           key={property.id}
         >
           <p className={s.text} style={textStyle}>

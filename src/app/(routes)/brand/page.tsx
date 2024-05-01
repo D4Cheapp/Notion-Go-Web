@@ -1,11 +1,11 @@
 import React from 'react';
-import Header from '@/src/components/Header';
-import About from './components/About';
-import Logo from './components/Logo';
-import Palette from './components/Palette';
-import ThemePreview from './components/ThemePreview';
-import Fonts from './components/Fonts';
-import Icons from './components/Icons';
+import Header from '@/src/components/common/Header';
+import About from '@/src/components/pages/BrandBook/About';
+import Logo from '@/src/components/pages/BrandBook/Logo';
+import Palette from '@/src/components/pages/BrandBook/Palette';
+import ThemePreview from '@/src/components/pages/BrandBook/ThemePreview';
+import Fonts from '@/src/components/pages/BrandBook/Fonts';
+import Icons from '@/src/components/pages/BrandBook/Icons';
 
 const BrandBook = () => {
   return (

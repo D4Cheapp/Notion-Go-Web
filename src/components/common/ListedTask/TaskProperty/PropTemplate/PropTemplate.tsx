@@ -9,9 +9,7 @@ interface Props {
 const PropTemplate = ({ svg, children }: Props) => {
   return (
     <div className={s.propertyContainer}>
-      <div className={s.propertyLogo}>
-        {svg}
-      </div>
+      <div className={s.propertyLogo}>{svg}</div>
       {children}
     </div>
   );

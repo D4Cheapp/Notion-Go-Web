@@ -1,8 +1,19 @@
 import React from 'react';
-import Home from '../pages/Home';
+import Header from '../components/common/Header';
 
 const HomePage = () => {
-  return <Home />;
+  return (
+    <>
+      <Header
+        links={[
+          { text: 'Список дел', redirectUrl: '/todo' },
+          { text: 'Бренд', redirectUrl: '/brand' },
+          { text: 'Настройки', redirectUrl: '/settings' },
+        ]}
+      />
+      Home
+    </>
+  );
 };
 
 export default HomePage;
