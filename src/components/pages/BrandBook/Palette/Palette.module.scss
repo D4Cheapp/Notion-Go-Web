@@ -36,7 +36,7 @@
   @include fontType(2.5rem, _, 700);
 
   @include smartphone {
-    width: 70%;
+    width: 80%;
   }
 }
 
@@ -71,6 +71,7 @@
 
 .secondaryColors {
   display: inline-flex;
+  width: 100%;
   flex-wrap: wrap;
   gap: 1em 12%;
 }
